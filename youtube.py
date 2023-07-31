@@ -1,5 +1,5 @@
 from pytube import YouTube
-from tkinter import filedialog
+from tkinter import filedialog, messagebox
 from moviepy.editor import VideoFileClip
 from tkinter import *
 import shutil
@@ -15,13 +15,14 @@ def url_dowload():
      boton_url.config(text=path, fg='blue')
     
 def popup():
-    MessageBox.showinfo('Sobre mi','https://www.linkedin.com/in/pablopuch/')
+    messagebox.showinfo('Sobre mi','https://www.linkedin.com/in/pablopuch/')
 
 root = Tk()
 root.config(bd=15)
 root.title('Script descargar Vídeos')
 
-imagen = PhotoImage(file='download_youtube/resources/Youtube_logo.png')
+
+imagen = PhotoImage(file='resources/Youtube_logo.png')
 new_img = imagen.subsample(3,3)
 
 foto = Label(root, image=new_img, bd=0)
