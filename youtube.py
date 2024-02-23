@@ -4,7 +4,6 @@ from moviepy.editor import VideoFileClip
 from tkinter import *
 import shutil
 
-
 def accion():
     enlace = videos.get()
     video = YouTube(enlace)
@@ -20,7 +19,6 @@ def popup():
 root = Tk()
 root.config(bd=15)
 root.title('Script descargar Vídeos')
-
 
 imagen = PhotoImage(file='resources/Youtube_logo.png')
 new_img = imagen.subsample(3,3)
